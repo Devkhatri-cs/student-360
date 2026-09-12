@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student 360 - Dashboard</title>
+
+    <!-- Google Fonts for crisp, clean UI typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= TOPBAR ================= -->
+    <header class="topbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>STUDENT <b>360</b></span>
+        </div>
+
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search courses, exams, results, notices...">
+        </div>
+
+        <div class="top-right">
+
+            <div class="notification" title="Notifications">
+                <i class="fa-solid fa-bell"></i>
+                <span class="badge">3</span>
+            </div>
+
+            <a href="#profile" class="user">
+                <div class="user-image">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="user-meta">
+                    <span class="user-name">Aryan Berwal</span>
+                    <span class="user-role">Student (Sem 3)</span>
+                </div>
+                <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= SIDEBAR NAVIGATION ================= -->
+    <!-- All menu items link directly to their corresponding sections using HTML anchors -->
+    <aside class="sidebar">
+
+        <div class="sidebar-heading">NAVIGATION</div>
+
+        <ul class="sidebar-menu">
+
+            <li>
+                <a href="#dashboard" class="sidebar-link active">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#profile" class="sidebar-link">
+                    <i class="fa-solid fa-user"></i>
+                    <span>My Profile</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#academics" class="sidebar-link">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>Academics</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#attendance" class="sidebar-link">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span>Attendance</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#results" class="sidebar-link">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <span>Results</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#courses" class="sidebar-link">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span>Courses</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#documents" class="sidebar-link">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <span>Documents</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#settings" class="sidebar-link">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+
+        </ul>
+
+        <div class="sidebar-footer">
+            <div class="term-tag">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Academic Year 2024-25</span>
+            </div>
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="main">
+
+        <!-- ================= 1. DASHBOARD OVERVIEW SECTION ================= -->
+        <section id="dashboard" class="content-section">
+
+            <!-- Welcome Banner -->
+            <div class="welcome-card">
+
+                <div class="welcome-text">
+                    <h1>
+                        Good Afternoon, Aryan <span>👋</span>
+                    </h1>
+
+                    <p>
+                        Stay consistent, keep learning, and achieve your goals this semester!
+                    </p>
+
+                    <div class="student-info">
+                        <span class="info-pill">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            B.Tech CSE
+                        </span>
+
+                        <span class="info-divider">│</span>
+
+                        <span class="info-pill">
+                            <i class="fa-solid fa-calendar"></i>
+                            2nd Year
+                        </span>
+
+                        <span class="info-divider">│</span>
+
+                        <span class="info-pill">
+                            <i class="fa-solid fa-layer-group"></i>
+                            Semester 3
+                        </span>
+                    </div>
+                </div>
+
+                <div class="quote-card">
+                    <div class="quote-icon">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+                    <div class="quote-content">
+                        <p>"Small steps every day lead to big results."</p>
+                        <span class="quote-author">— Daily Motivation</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Overview Metric Cards -->
+            <div class="dashboard-cards">
+
+                <!-- Profile Summary Card -->
+                <div class="profile-card">
+
+                    <div class="profile-photo">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="profile-details">
+
+                        <h2>Aryan Berwal</h2>
+
+                        <p class="course">
+                            B.Tech CSE &nbsp;|&nbsp; 2nd Year &nbsp;|&nbsp; Sem 3
+                        </p>
+
+                        <div class="details">
+                            <p><b>Roll No.</b> <span>074</span></p>
+                            <p><b>Email</b> <span>aryan.berwal@chitkara.edu.in</span></p>
+                            <p><b>Hostel</b> <span>Boys Hostel - Block B, Room 204</span></p>
+                        </div>
+
+                        <a href="#profile" class="btn btn-secondary">
+                            View Full Profile <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Attendance Stat -->
+                <div class="stat-card attendance-card">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                    <p class="stat-label">Attendance</p>
+                    <h2 class="stat-value">92%</h2>
+                    <small class="stat-sub">(Current Semester)</small>
+                </div>
+
+                <!-- CGPA Stat -->
+                <div class="stat-card cgpa-card">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <p class="stat-label">CGPA</p>
+                    <h2 class="stat-value">8.12</h2>
+                    <small class="stat-sub">(Till Sem 4)</small>
+                </div>
+
+                <!-- Courses Stat -->
+                <div class="stat-card courses-card">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <p class="stat-label">Courses Enrolled</p>
+                    <h2 class="stat-value">6</h2>
+                    <small class="stat-sub">(This Semester)</small>
+                </div>
+
+                <!-- Credits Stat -->
+                <div class="stat-card credits-card">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <p class="stat-label">Credits Earned</p>
+                    <h2 class="stat-value">96</h2>
+                    <small class="stat-sub">(Till Now)</small>
+                </div>
+
+            </div>
+
+
+            <!-- Lower Overview Grid -->
+            <div class="lower-section">
+
+                <!-- Notifications Card -->
+                <div class="card notifications-card">
+
+                    <div class="card-heading">
+                        <h2>
+                            <i class="fa-solid fa-bell"></i>
+                            Recent Notifications
+                        </h2>
+                        <span class="badge-pill">4 New</span>
+                    </div>
+
+                    <div class="notification-list">
+
+                        <div class="notification-item">
+                            <span class="dot yellow-dot"></span>
+                            <div class="notification-body">
+                                <p>Your attendance for today's class has been updated.</p>
+                                <small><i class="fa-regular fa-clock"></i> 2 hours ago</small>
+                            </div>
+                        </div>
+
+                        <div class="notification-item">
+                            <span class="dot ash-dot"></span>
+                            <div class="notification-body">
+                                <p>New assignment posted for Data Structures &amp; Algorithms.</p>
+                                <small><i class="fa-regular fa-clock"></i> 5 hours ago</small>
+                            </div>
+                        </div>
+
+                        <div class="notification-item">
+                            <span class="dot yellow-dot"></span>
+                            <div class="notification-body">
+                                <p>Results for Semester 4 are now available.</p>
+                                <small><i class="fa-regular fa-clock"></i> 1 day ago</small>
+                            </div>
+                        </div>
+
+                        <div class="notification-item">
+                            <span class="dot ash-dot"></span>
+                            <div class="notification-body">
+                                <p>Notice: Makeup Examination for 25CSE0204 (OOP).</p>
+                                <small><i class="fa-regular fa-clock"></i> 2 days ago</small>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Quick Navigation Links -->
+                <div class="card quick-links-card">
+
+                    <div class="card-heading">
+                        <h2>
+                            <i class="fa-solid fa-bolt"></i>
+                            Quick Actions
+                        </h2>
+                    </div>
+
+                    <p class="card-subtext">Quick shortcuts to your frequent academic tools:</p>
+
+                    <div class="quick-grid">
+
+                        <a href="#academics" class="quick-action-btn">
+                            <div class="action-icon">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </div>
+                            <div class="action-text">
+                                <strong>Class Timetable</strong>
+                                <small>View scheduled periods</small>
+                            </div>
+                            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+
+                        <a href="#documents" class="quick-action-btn">
+                            <div class="action-icon">
+                                <i class="fa-solid fa-file-arrow-down"></i>
+                            </div>
+                            <div class="action-text">
+                                <strong>Exam Hall Ticket</strong>
+                                <small>Download PDF copy</small>
+                            </div>
+                            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+
+                        <a href="#results" class="quick-action-btn">
+                            <div class="action-icon">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <div class="action-text">
+                                <strong>Grade Cards</strong>
+                                <small>Check semester marks</small>
+                            </div>
+                            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+
+                        <a href="#courses" class="quick-action-btn">
+                            <div class="action-icon">
+                                <i class="fa-solid fa-book-open"></i>
+                            </div>
+                            <div class="action-text">
+                                <strong>Course Syllabus</strong>
+                                <small>Subject resources</small>
+                            </div>
+                            <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= 2. MY PROFILE SECTION ================= -->
+        <section id="profile" class="content-section">
+
+            <div class="section-header">
+                <div class="section-title">
+                    <i class="fa-solid fa-user"></i>
+                    <div>
+                        <h2>My Profile</h2>
+                        <p>Manage your university student profile and personal information</p>
+                    </div>
+                </div>
+
+                <div class="section-actions">
+                    <button class="btn btn-secondary">
+                        <i class="fa-solid fa-pen-to-square"></i> Edit Profile
+                    </button>
+                    <button class="btn btn-primary">
+                        <i class="fa-solid fa-id-card"></i> ID Card Summary
+                    </button>
+                </div>
+            </div>
+
+            <div class="profile-grid">
+
+                <div class="card profile-info-card">
+
+                    <div class="profile-banner">
+                        <div class="avatar-holder">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="profile-identity">
+                            <h3>Rahul Sharma</h3>
+                            <span class="student-id-tag">Student ID: 2023-CSE-045</span>
+                            <span class="status-badge active"><i class="fa-solid fa-circle"></i> Active Enrollment</span>
+                        </div>
+                    </div>
+
+                    <div class="profile-data-table">
+                        <div class="data-row">
+                            <span class="data-label"><i class="fa-solid fa-graduation-cap"></i> Degree Program:</span>
+                            <span class="data-val">Bachelor of Technology (B.Tech)</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="data-label"><i class="fa-solid fa-laptop-code"></i> Department:</span>
+                            <span class="data-val">Computer Science &amp; Engineering</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="data-label"><i class="fa-solid fa-id-badge"></i> Roll Number:</span>
+                            <span class="data-val">CSE-23045</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="data-label"><i class="fa-solid fa-calendar-days"></i> Year &amp; Semester:</span>
+                            <span class="data-val">2nd Year / 3rd Semester</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="data-label"><i class="fa-solid fa-envelope"></i> University Email:</span>
+                            <span class="data-val">rahul.sharma@university.ac.in</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="data-label"><i class="fa-solid fa-phone"></i> Mobile Phone:</span>
+                            <span class="data-val">+91 98765 43210</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card profile-side-card">
+
+                    <div class="card-heading">
+                        <h3><i class="fa-solid fa-building-user"></i> Campus &amp; Residence</h3>
+                    </div>
+
+                    <div class="residence-info">
+                        <p class="residence-title">Hostel Accommodation</p>
+                        <p class="residence-detail"><b>Hostel:</b> Boys Hostel No. 3</p>
+                        <p class="residence-detail"><b>Block / Room:</b> Block B, Room 204</p>
+                        <p class="residence-detail"><b>Mess Plan:</b> Standard North Indian (Vegetarian)</p>
+                        <p class="residence-detail"><b>Warden:</b> Dr. K. S. Reddy (+91 98451 22311)</p>
+                    </div>
+
+                    <hr class="card-divider">
+
+                    <div class="card-heading">
+                        <h3><i class="fa-solid fa-shield-heart"></i> Emergency Contact</h3>
+                    </div>
+
+                    <div class="residence-info">
+                        <p class="residence-detail"><b>Guardian:</b> Mr. Suresh Sharma (Father)</p>
+                        <p class="residence-detail"><b>Contact:</b> +91 98112 34567</p>
+                        <p class="residence-detail"><b>Blood Group:</b> B+ Positive</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= 3. ACADEMICS SECTION ================= -->
+        <section id="academics" class="content-section">
+
+            <div class="section-header">
+                <div class="section-title">
+                    <i class="fa-solid fa-book-open"></i>
+                    <div>
+                        <h2>Academics</h2>
+                        <p>Class schedules, academic progress, and upcoming examination calendar</p>
+                    </div>
+                </div>
+
+                <div class="section-actions">
+                    <button class="btn btn-secondary">
+                        <i class="fa-solid fa-calendar-week"></i> Academic Calendar
+                    </button>
+                    <button class="btn btn-primary">
+                        <i class="fa-solid fa-download"></i> Syllabus PDF
+                    </button>
+                </div>
+            </div>
+
+            <!-- Semester Progress -->
+            <div class="card progress-banner">
+                <div class="progress-details">
+                    <div class="progress-meta">
+                        <h4>Semester 5 Milestone Progress</h4>
+                        <span>Week 9 of 16 (58% Completed)</span>
+                    </div>
+                    <div class="progress-bar-wrap">
+                        <div class="progress-bar-fill" style="width: 58%;"></div>
+                    </div>
+                </div>
+                <div class="progress-stat">
+                    <span class="progress-badge">On Track</span>
+                </div>
+            </div>
+
+            <!-- Academic Content Split -->
+            <div class="academics-grid">
+
+                <!-- Upcoming Exams -->
+                <div class="card exams-card">
+
+                    <div class="card-heading">
+                        <h2>
+                            <i class="fa-solid fa-calendar-check"></i>
+                            Upcoming Examinations
+                        </h2>
+                        <span class="badge-pill">Mid-Terms</span>
+                    </div>
+
+                    <div class="exam-list">
+
+                        <div class="exam-card">
+                            <div class="date-badge">
+                                <strong>12</strong>
+                                <span>SEP</span>
+                            </div>
+                            <div class="exam-info">
+                                <h3>Data Structures &amp; Algorithms</h3>
+                                <p class="code">CSE-201 &bull; 4 Credits</p>
+                                <div class="exam-tags">
+                                    <span><i class="fa-regular fa-clock"></i> 10:00 AM - 12:00 PM</span>
+                                    <span><i class="fa-solid fa-location-dot"></i> Hall 203</span>
+                                </div>
+                            </div>
+                            <button class="btn-icon" title="View Syllabus">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+
+                        <div class="exam-card">
+                            <div class="date-badge">
+                                <strong>18</strong>
+                                <span>SEP</span>
+                            </div>
+                            <div class="exam-info">
+                                <h3>Database Management Systems</h3>
+                                <p class="code">CSE-302 &bull; 4 Credits</p>
+                                <div class="exam-tags">
+                                    <span><i class="fa-regular fa-clock"></i> 02:00 PM - 04:00 PM</span>
+                                    <span><i class="fa-solid fa-location-dot"></i> Hall 105</span>
+                                </div>
+                            </div>
+                            <button class="btn-icon" title="View Syllabus">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+
+                        <div class="exam-card highlight">
+                            <div class="date-badge yellow">
+                                <strong>26</strong>
+                                <span>SEP</span>
+                            </div>
+                            <div class="exam-info">
+                                <h3>Computer Networks</h3>
+                                <p class="code">CSE-305 &bull; 3 Credits</p>
+                                <div class="exam-tags">
+                                    <span><i class="fa-regular fa-clock"></i> 10:00 AM - 12:00 PM</span>
+                                    <span><i class="fa-solid fa-location-dot"></i> Hall 201</span>
+                                </div>
+                            </div>
+                            <button class="btn-icon" title="View Syllabus">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Daily Timetable Card -->
+                <div class="card timetable-card">
+
+                    <div class="card-heading">
+                        <h2>
+                            <i class="fa-solid fa-clock"></i>
+                            Today's Schedule (Monday)
+                        </h2>
+                        <span class="badge-pill">4 Lectures</span>
+                    </div>
+
+                    <div class="schedule-timeline">
+
+                        <div class="schedule-item active">
+                            <div class="schedule-time">09:00 AM</div>
+                            <div class="schedule-content">
+                                <h4>Data Structures &amp; Algorithms</h4>
+                                <p>Prof. A. Mehta &bull; Room 302 (Lab)</p>
+                            </div>
+                            <span class="status-indicator current">Ongoing</span>
+                        </div>
+
+                        <div class="schedule-item">
+                            <div class="schedule-time">11:15 AM</div>
+                            <div class="schedule-content">
+                                <h4>Database Management Systems</h4>
+                                <p>Prof. S. Verma &bull; Room 204</p>
+                            </div>
+                            <span class="status-indicator">Upcoming</span>
+                        </div>
+
+                        <div class="schedule-item">
+                            <div class="schedule-time">01:30 PM</div>
+                            <div class="schedule-content">
+                                <h4>Computer Networks</h4>
+                                <p>Prof. R. Kulkarni &bull; Room 108</p>
+                            </div>
+                            <span class="status-indicator">Upcoming</span>
+                        </div>
+
+                        <div class="schedule-item">
+                            <div class="schedule-time">03:00 PM</div>
+                            <div class="schedule-content">
+                                <h4>Web Technologies Lab</h4>
+                                <p>Prof. P. Sharma &bull; Computer Center 2</p>
+                            </div>
+                            <span class="status-indicator">Upcoming</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= 4. ATTENDANCE SECTION ================= -->
+        <section id="attendance" class="content-section">
+
+            <div class="section-header">
+                <div class="section-title">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <div>
+                        <h2>Attendance Record</h2>
+                        <p>Subject-wise breakdown and semester eligibility tracking</p>
+                    </div>
+                </div>
+
+                <div class="section-actions">
+                    <button class="btn btn-secondary">
+                        <i class="fa-solid fa-file-lines"></i> Detailed Log
+                    </button>
+                    <button class="btn btn-primary">
+                        <i class="fa-solid fa-envelope-open-text"></i> Apply for Leave
+                    </button>
+                </div>
+            </div>
+
+            <!-- Overall Attendance Bar -->
+            <div class="attendance-summary-cards">
+
+                <div class="summary-card">
+                    <span class="summary-label">Total Conducted Classes</span>
+                    <strong class="summary-num">186</strong>
+                    <small class="summary-hint">Across all subjects</small>
+                </div>
+
+                <div class="summary-card">
+                    <span class="summary-label">Classes Attended</span>
+                    <strong class="summary-num">171</strong>
+                    <small class="summary-hint">Present days</small>
+                </div>
+
+                <div class="summary-card">
+                    <span class="summary-label">Classes Missed</span>
+                    <strong class="summary-num">15</strong>
+                    <small class="summary-hint">Approved &amp; Leaves</small>
+                </div>
+
+                <div class="summary-card highlight-card">
+                    <span class="summary-label">Overall Percentage</span>
+                    <strong class="summary-num yellow-text">91.9%</strong>
+                    <small class="summary-status"><i class="fa-solid fa-circle-check"></i> Above 75% Criteria</small>
+                </div>
+
+            </div>
+
+            <!-- Subject-wise Attendance Table -->
+            <div class="card table-card">
+
+                <div class="card-heading">
+                    <h3>Subject-wise Attendance Breakdown</h3>
+                    <span class="badge-pill">Sem 3</span>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Subject Code</th>
+                                <th>Course Title</th>
+                                <th>Attended</th>
+                                <th>Total</th>
+                                <th>Percentage</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>CSE-201</b></td>
+                                <td>Data Structures &amp; Algorithms</td>
+                                <td>38</td>
+                                <td>40</td>
+                                <td>
+                                    <div class="table-progress">
+                                        <div class="progress-bar-wrap small">
+                                            <div class="progress-bar-fill" style="width: 95%;"></div>
+                                        </div>
+                                        <span>95.0%</span>
+                                    </div>
+                                </td>
+                                <td><span class="tag-status safe">Excellent</span></td>
+                            </tr>
+                            <tr>
+                                <td><b>CSE-302</b></td>
+                                <td>Database Management Systems</td>
+                                <td>34</td>
+                                <td>38</td>
+                                <td>
+                                    <div class="table-progress">
+                                        <div class="progress-bar-wrap small">
+                                            <div class="progress-bar-fill" style="width: 89.5%;"></div>
+                                        </div>
+                                        <span>89.5%</span>
+                                    </div>
+                                </td>
+                                <td><span class="tag-status safe">Good</span></td>
+                            </tr>
+                            <tr>
+                                <td><b>CSE-305</b></td>
+                                <td>Computer Networks</td>
+                                <td>32</td>
+                                <td>36</td>
+                                <td>
+                                    <div class="table-progress">
+                                        <div class="progress-bar-wrap small">
+                                            <div class="progress-bar-fill" style="width: 88.8%;"></div>
+                                        </div>
+                                        <span>88.8%</span>
+                                    </div>
+                                </td>
+                                <td><span class="tag-status safe">Good</span></td>
+                            </tr>
+                            <tr>
+                                <td><b>CSE-308</b></td>
+                                <td>Web Technologies</td>
+                                <td>30</td>
+                                <td>32</td>
+                                <td>
+                                    <div class="table-progress">
+                                        <div class="progress-bar-wrap small">
+                                            <div class="progress-bar-fill" style="width: 93.7%;"></div>
+                                        </div>
+                                        <span>93.7%</span>
+                                    </div>
+                                </td>
+                                <td><span class="tag-status safe">Excellent</span></td>
+                            </tr>
+                            <tr>
+                                <td><b>CSE-310</b></td>
+                                <td>Operating Systems</td>
+                                <td>37</td>
+                                <td>40</td>
+                                <td>
+                                    <div class="table-progress">
+                                        <div class="progress-bar-wrap small">
+                                            <div class="progress-bar-fill" style="width: 92.5%;"></div>
+                                        </div>
+                                        <span>92.5%</span>
+                                    </div>
+                                </td>
+                                <td><span class="tag-status safe">Excellent</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= 5. RESULTS SECTION ================= -->
+        <section id="results" class="content-section">
+
+            <div class="section-header">
+                <div class="section-title">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <div>
+                        <h2>Academic Results &amp; Performance</h2>
+                        <p>Semester-wise SGPA, cumulative CGPA, and marksheet downloads</p>
+                    </div>
+                </div>
+
+                <div class="section-actions">
+                    <button class="btn btn-secondary">
+                        <i class="fa-solid fa-calculator"></i> SGPA Calculator
+                    </button>
+                    <button class="btn btn-primary">
+                        <i class="fa-solid fa-file-pdf"></i> Download Official Transcript
+                    </button>
+                </div>
+            </div>
+
+            <div class="results-grid">
+
+                <!-- Performance Chart -->
+                <div class="card performance-card">
+
+                    <div class="card-heading">
+                        <div>
+                            <h2>SGPA Progression Curve</h2>
+                            <small class="card-subtext">Visual progress across completed semesters</small>
+                        </div>
+                        <span class="badge-pill">Cumulative: 8.12</span>
+                    </div>
+
+                    <div class="chart">
+
+                        <div class="y-axis">
+                            <span>10.0</span>
+                            <span>8.0</span>
+                            <span>6.0</span>
+                            <span>4.0</span>
+                            <span>2.0</span>
+                            <span>0.0</span>
+                        </div>
+
+                        <div class="graph">
+
+                            <div class="horizontal h1"></div>
+                            <div class="horizontal h2"></div>
+                            <div class="horizontal h3"></div>
+                            <div class="horizontal h4"></div>
+                            <div class="horizontal h5"></div>
+
+                            <svg viewBox="0 0 700 200" preserveAspectRatio="none">
+                                <polyline
+                                    points="20,135 180,115 340,100 500,85 670,55"
+                                    fill="none"
+                                    class="chart-line"/>
+                                <circle cx="20" cy="135" r="6" class="chart-point"/>
+                                <circle cx="180" cy="115" r="6" class="chart-point"/>
+                                <circle cx="340" cy="100" r="6" class="chart-point"/>
+                                <circle cx="500" cy="85" r="6" class="chart-point"/>
+                                <circle cx="670" cy="55" r="6" class="chart-point"/>
+                            </svg>
+
+                            <div class="x-axis">
+                                <span>Sem 1 (7.70)</span>
+                                <span>Sem 2 (7.95)</span>
+                                <span>Sem 3 (8.15)</span>
+                                <span>Sem 4 (8.38)</span>
+                                <span>Sem 3 (Target 8.7)</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Semester Breakdown Table -->
+                <div class="card grade-summary-card">
+
+                    <div class="card-heading">
+                        <h3>Semester Grade Sheet Summary</h3>
+                        <span class="badge-pill">Completed 4 Semesters</span>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Semester</th>
+                                    <th>Credits</th>
+                                    <th>SGPA</th>
+                                    <th>Status</th>
+                                    <th>Grade Card</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>Semester 1</b></td>
+                                    <td>24</td>
+                                    <td><strong>7.70</strong></td>
+                                    <td><span class="tag-status safe">Passed</span></td>
+                                    <td><button class="btn-table-action"><i class="fa-solid fa-download"></i> PDF</button></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Semester 2</b></td>
+                                    <td>24</td>
+                                    <td><strong>7.95</strong></td>
+                                    <td><span class="tag-status safe">Passed</span></td>
+                                    <td><button class="btn-table-action"><i class="fa-solid fa-download"></i> PDF</button></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Semester 3</b></td>
+                                    <td>24</td>
+                                    <td><strong>8.15</strong></td>
+                                    <td><span class="tag-status safe">Passed</span></td>
+                                    <td><button class="btn-table-action"><i class="fa-solid fa-download"></i> PDF</button></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Semester 4</b></td>
+                                    <td>24</td>
+                                    <td><strong>8.38</strong></td>
+                                    <td><span class="tag-status safe">Passed</span></td>
+                                    <td><button class="btn-table-action"><i class="fa-solid fa-download"></i> PDF</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= 6. COURSES SECTION ================= -->
+        <section id="courses" class="content-section">
+
+            <div class="section-header">
+                <div class="section-title">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <div>
+                        <h2>Enrolled Courses</h2>
+                        <p>Current semester active courses, faculty instructors, and learning material</p>
+                    </div>
+                </div>
+
+                <div class="section-actions">
+                    <button class="btn btn-secondary">
+                        <i class="fa-solid fa-book"></i> Course Directory
+                    </button>
+                    <button class="btn btn-primary">
+                        <i class="fa-solid fa-plus"></i> Register Elective
+                    </button>
+                </div>
+            </div>
+
+            <div class="courses-grid">
+
+                <!-- Course 1 -->
+                <div class="card course-box">
+                    <div class="course-header">
+                        <span class="course-code">CSE-201</span>
+                        <span class="course-credits">4 Credits</span>
+                    </div>
+                    <h3>Data Structures &amp; Algorithms</h3>
+                    <p class="instructor"><i class="fa-solid fa-chalkboard-user"></i> Prof. A. Mehta</p>
+                    <p class="course-desc">Trees, Graphs, Sorting algorithms, Dynamic Programming, and algorithm analysis.</p>
+                    <div class="course-actions">
+                        <button class="btn btn-secondary btn-sm"><i class="fa-solid fa-file-lines"></i> Syllabus</button>
+                        <button class="btn btn-primary btn-sm"><i class="fa-solid fa-folder-open"></i> Notes &amp; PPTs</button>
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="card course-box">
+                    <div class="course-header">
+                        <span class="course-code">CSE-302</span>
+                        <span class="course-credits">4 Credits</span>
+                    </div>
+                    <h3>Database Management Systems</h3>
+                    <p class="instructor"><i class="fa-solid fa-chalkboard-user"></i> Prof. S. Verma</p>
+                    <p class="course-desc">Relational model, SQL, Normalization, ACID transactions, and indexing structures.</p>
+                    <div class="course-actions">
+                        <button class="btn btn-secondary btn-sm"><i class="fa-solid fa-file-lines"></i> Syllabus</button>
+                        <button class="btn btn-primary btn-sm"><i class="fa-solid fa-folder-open"></i> Notes &amp; PPTs</button>
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="card course-box">
+                    <div class="course-header">
+                        <span class="course-code">CSE-305</span>
+                        <span class="course-credits">3 Credits</span>
+                    </div>
+                    <h3>Computer Networks</h3>
+                    <p class="instructor"><i class="fa-solid fa-chalkboard-user"></i> Prof. R. Kulkarni</p>
+                    <p class="course-desc">OSI &amp; TCP/IP models, routing protocols, subnetting, congestion control.</p>
+                    <div class="course-actions">
+                        <button class="btn btn-secondary btn-sm"><i class="fa-solid fa-file-lines"></i> Syllabus</button>
+                        <button class="btn btn-primary btn-sm"><i class="fa-solid fa-folder-open"></i> Notes &amp; PPTs</button>
+                    </div>
+                </div>
+
+                <!-- Course 4 -->
+                <div class="card course-box">
+                    <div class="course-header">
+                        <span class="course-code">CSE-308</span>
+                        <span class="course-credits">3 Credits</span>
+                    </div>
+                    <h3>Web Technologies</h3>
+                    <p class="instructor"><i class="fa-solid fa-chalkboard-user"></i> Prof. P. Sharma</p>
+                    <p class="course-desc">HTML5, CSS3, JavaScript, Responsive design, REST APIs, and modern web workflows.</p>
+                    <div class="course-actions">
+                        <button class="btn btn-secondary btn-sm"><i class="fa-solid fa-file-lines"></i> Syllabus</button>
+                        <button class="btn btn-primary btn-sm"><i class="fa-solid fa-folder-open"></i> Notes &amp; PPTs</button>
+                    </div>
+                </div>
+
+                <!-- Course 5 -->
+                <div class="card course-box">
+                    <div class="course-header">
+                        <span class="course-code">CSE-310</span>
+                        <span class="course-credits">4 Credits</span>
+                    </div>
+                    <h3>Operating Systems</h3>
+                    <p class="instructor"><i class="fa-solid fa-chalkboard-user"></i> Prof. N. Gupta</p>
+                    <p class="course-desc">Processes, Threads, CPU scheduling, Memory virtualization, and file systems.</p>
+                    <div class="course-actions">
+                        <button class="btn btn-secondary btn-sm"><i class="fa-solid fa-file-lines"></i> Syllabus</button>
+                        <button class="btn btn-primary btn-sm"><i class="fa-solid fa-folder-open"></i> Notes &amp; PPTs</button>
+                    </div>
+                </div>
+
+                <!-- Course 6 -->
+                <div class="card course-box">
+                    <div class="course-header">
+                        <span class="course-code">MAT-301</span>
+                        <span class="course-credits">3 Credits</span>
+                    </div>
+                    <h3>Discrete Mathematics</h3>
+                    <p class="instructor"><i class="fa-solid fa-chalkboard-user"></i> Prof. K. Rao</p>
+                    <p class="course-desc">Propositional logic, set theory, combinatorics, relations, and graph proofs.</p>
+                    <div class="course-actions">
+                        <button class="btn btn-secondary btn-sm"><i class="fa-solid fa-file-lines"></i> Syllabus</button>
+                        <button class="btn btn-primary btn-sm"><i class="fa-solid fa-folder-open"></i> Notes &amp; PPTs</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= 7. DOCUMENTS SECTION ================= -->
+        <section id="documents" class="content-section">
+
+            <div class="section-header">
+                <div class="section-title">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <div>
+                        <h2>Student Documents</h2>
+                        <p>Official university forms, receipts, admit cards, and certificates</p>
+                    </div>
+                </div>
+
+                <div class="section-actions">
+                    <button class="btn btn-primary">
+                        <i class="fa-solid fa-upload"></i> Upload Certificate
+                    </button>
+                </div>
+            </div>
+
+            <div class="documents-grid">
+
+                <div class="card doc-card">
+                    <div class="doc-icon-box">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </div>
+                    <div class="doc-info">
+                        <h4>Semester 5 Admit Card (Hall Ticket)</h4>
+                        <p>Mid-Semester Exam 2024 &bull; Verified &amp; Signed</p>
+                        <small>File size: 340 KB &bull; Updated 3 days ago</small>
+                    </div>
+                    <button class="btn btn-primary btn-sm">
+                        <i class="fa-solid fa-download"></i> Download
+                    </button>
+                </div>
+
+                <div class="card doc-card">
+                    <div class="doc-icon-box">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </div>
+                    <div class="doc-info">
+                        <h4>Consolidated Marksheet (Sem 1 to 4)</h4>
+                        <p>Academic Registrar Office &bull; Official Digital Copy</p>
+                        <small>File size: 850 KB &bull; Updated Aug 2024</small>
+                    </div>
+                    <button class="btn btn-primary btn-sm">
+                        <i class="fa-solid fa-download"></i> Download
+                    </button>
+                </div>
+
+                <div class="card doc-card">
+                    <div class="doc-icon-box">
+                        <i class="fa-solid fa-id-card"></i>
+                    </div>
+                    <div class="doc-info">
+                        <h4>Digital Student ID Card</h4>
+                        <p>University Identity Card &bull; Valid till June 2026</p>
+                        <small>File size: 1.2 MB &bull; PDF Format</small>
+                    </div>
+                    <button class="btn btn-primary btn-sm">
+                        <i class="fa-solid fa-download"></i> Download
+                    </button>
+                </div>
+
+                <div class="card doc-card">
+                    <div class="doc-icon-box">
+                        <i class="fa-solid fa-receipt"></i>
+                    </div>
+                    <div class="doc-info">
+                        <h4>Semester 5 Tuition Fee Receipt</h4>
+                        <p>Accounts Department &bull; Transaction ID: TXN-892182</p>
+                        <small>File size: 210 KB &bull; Paid July 2024</small>
+                    </div>
+                    <button class="btn btn-primary btn-sm">
+                        <i class="fa-solid fa-download"></i> Download
+                    </button>
+                </div>
+
+                <div class="card doc-card">
+                    <div class="doc-icon-box">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <div class="doc-info">
+                        <h4>Bonafide Student Certificate</h4>
+                        <p>Dean Student Affairs &bull; For Passport / Bank Use</p>
+                        <small>File size: 180 KB &bull; Generated on request</small>
+                    </div>
+                    <button class="btn btn-primary btn-sm">
+                        <i class="fa-solid fa-download"></i> Download
+                    </button>
+                </div>
+
+                <div class="card doc-card">
+                    <div class="doc-icon-box">
+                        <i class="fa-solid fa-house-user"></i>
+                    </div>
+                    <div class="doc-info">
+                        <h4>Hostel Allotment Letter</h4>
+                        <p>Chief Warden Office &bull; Block B - Room 204</p>
+                        <small>File size: 290 KB &bull; Academic Year 2024-25</small>
+                    </div>
+                    <button class="btn btn-primary btn-sm">
+                        <i class="fa-solid fa-download"></i> Download
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= 8. SETTINGS SECTION ================= -->
+        <section id="settings" class="content-section">
+
+            <div class="section-header">
+                <div class="section-title">
+                    <i class="fa-solid fa-gear"></i>
+                    <div>
+                        <h2>Account &amp; Preferences</h2>
+                        <p>Personal account settings, notification preferences, and password security</p>
+                    </div>
+                </div>
+
+                <div class="section-actions">
+                    <button class="btn btn-secondary">
+                        <i class="fa-solid fa-rotate-left"></i> Reset Defaults
+                    </button>
+                    <button class="btn btn-primary">
+                        <i class="fa-solid fa-floppy-disk"></i> Save Preferences
+                    </button>
+                </div>
+            </div>
+
+            <div class="settings-grid">
+
+                <!-- Security & Password -->
+                <div class="card settings-card">
+
+                    <div class="card-heading">
+                        <h3><i class="fa-solid fa-lock"></i> Security &amp; Password</h3>
+                    </div>
+
+                    <form class="settings-form" onsubmit="return false;">
+                        <div class="form-group">
+                            <label>Current Password</label>
+                            <input type="password" placeholder="Enter current password">
+                        </div>
+
+                        <div class="form-group">
+                            <label>New Password</label>
+                            <input type="password" placeholder="Enter new password (min. 8 characters)">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Confirm New Password</label>
+                            <input type="password" placeholder="Re-enter new password">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fa-solid fa-key"></i> Update Password
+                        </button>
+                    </form>
+
+                </div>
+
+                <!-- Notifications & Display -->
+                <div class="card settings-card">
+
+                    <div class="card-heading">
+                        <h3><i class="fa-solid fa-bell"></i> Notification Preferences</h3>
+                    </div>
+
+                    <div class="checkbox-group">
+
+                        <label class="checkbox-item">
+                            <input type="checkbox" checked>
+                            <div class="checkbox-text">
+                                <strong>Attendance Alerts</strong>
+                                <small>Notify immediately when daily attendance drops or is updated</small>
+                            </div>
+                        </label>
+
+                        <label class="checkbox-item">
+                            <input type="checkbox" checked>
+                            <div class="checkbox-text">
+                                <strong>Exam Timetable Updates</strong>
+                                <small>Receive reminders 24 hours prior to scheduled exams</small>
+                            </div>
+                        </label>
+
+                        <label class="checkbox-item">
+                            <input type="checkbox" checked>
+                            <div class="checkbox-text">
+                                <strong>Result Announcements</strong>
+                                <small>Email notification as soon as marks are published</small>
+                            </div>
+                        </label>
+
+                        <label class="checkbox-item">
+                            <input type="checkbox">
+                            <div class="checkbox-text">
+                                <strong>Library Due Reminders</strong>
+                                <small>SMS reminder 2 days before book return deadline</small>
+                            </div>
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
