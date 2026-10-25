@@ -17,7 +17,51 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="auth-pending">
+
+    <!-- ================= PRELOADER LOADING WINDOW (TRIGGERED AFTER LOGIN) ================= -->
+    <div id="preloader" class="preloader preloader-hidden" style="display: none;">
+        <div class="preloader-content">
+            
+            <div class="preloader-brand">
+                <div class="preloader-icon-wrapper">
+                    <i class="fa-solid fa-graduation-cap preloader-icon"></i>
+                    <div class="preloader-ring"></div>
+                    <div class="preloader-ring-outer"></div>
+                </div>
+                <h1 class="preloader-title">STUDENT <span>360</span></h1>
+                <p class="preloader-subtitle">Academic Management Portal</p>
+            </div>
+
+            <div class="preloader-card">
+                <div class="preloader-status-container">
+                    <span id="preloader-status-text" class="preloader-status-text">Initializing Student 360...</span>
+                    <span id="preloader-percentage" class="preloader-percentage">0%</span>
+                </div>
+
+                <div class="preloader-progress-track">
+                    <div id="preloader-progress-bar" class="preloader-progress-bar"></div>
+                </div>
+
+                <div class="preloader-steps">
+                    <span class="step-dot active" id="step-1" title="Initialization"></span>
+                    <span class="step-dot" id="step-2" title="Connecting Data"></span>
+                    <span class="step-dot" id="step-3" title="Dashboard Ready"></span>
+                </div>
+            </div>
+
+            <div class="preloader-footer">
+                <i class="fa-solid fa-shield-halved"></i> Secure Academic Environment &bull; 2024-25
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ================= REACT LOGIN PAGE ROOT ================= -->
+    <div id="login-root"></div>
+
+    <!-- ================= DASHBOARD APP CONTAINER ================= -->
+    <div id="dashboard-app" class="dashboard-app">
 
     <!-- ================= TOPBAR ================= -->
     <header class="topbar">
@@ -409,7 +453,7 @@
                             <i class="fa-solid fa-user"></i>
                         </div>
                         <div class="profile-identity">
-                            <h3>Rahul Sharma</h3>
+                            <h3>Aryan Berwal</h3>
                             <span class="student-id-tag">Student ID: 2023-CSE-045</span>
                             <span class="status-badge active"><i class="fa-solid fa-circle"></i> Active Enrollment</span>
                         </div>
@@ -426,7 +470,7 @@
                         </div>
                         <div class="data-row">
                             <span class="data-label"><i class="fa-solid fa-id-badge"></i> Roll Number:</span>
-                            <span class="data-val">CSE-23045</span>
+                            <span class="data-val">074</span>
                         </div>
                         <div class="data-row">
                             <span class="data-label"><i class="fa-solid fa-calendar-days"></i> Year &amp; Semester:</span>
@@ -434,7 +478,7 @@
                         </div>
                         <div class="data-row">
                             <span class="data-label"><i class="fa-solid fa-envelope"></i> University Email:</span>
-                            <span class="data-val">rahul.sharma@university.ac.in</span>
+                            <span class="data-val">aryan.berwal@chitkara.edu.in</span>
                         </div>
                         <div class="data-row">
                             <span class="data-label"><i class="fa-solid fa-phone"></i> Mobile Phone:</span>
@@ -503,7 +547,7 @@
             <div class="card progress-banner">
                 <div class="progress-details">
                     <div class="progress-meta">
-                        <h4>Semester 5 Milestone Progress</h4>
+                        <h4>Semester 3 Milestone Progress</h4>
                         <span>Week 9 of 16 (58% Completed)</span>
                     </div>
                     <div class="progress-bar-wrap">
@@ -1087,7 +1131,7 @@
                         <i class="fa-solid fa-file-pdf"></i>
                     </div>
                     <div class="doc-info">
-                        <h4>Semester 5 Admit Card (Hall Ticket)</h4>
+                        <h4>Semester 3 Admit Card (Hall Ticket)</h4>
                         <p>Mid-Semester Exam 2024 &bull; Verified &amp; Signed</p>
                         <small>File size: 340 KB &bull; Updated 3 days ago</small>
                     </div>
@@ -1129,7 +1173,7 @@
                         <i class="fa-solid fa-receipt"></i>
                     </div>
                     <div class="doc-info">
-                        <h4>Semester 5 Tuition Fee Receipt</h4>
+                        <h4>Semester 3 Tuition Fee Receipt</h4>
                         <p>Accounts Department &bull; Transaction ID: TXN-892182</p>
                         <small>File size: 210 KB &bull; Paid July 2024</small>
                     </div>
@@ -1276,5 +1320,10 @@
 
     </main>
 
+    </div><!-- ================= END DASHBOARD APP CONTAINER ================= -->
+
+    <!-- ================= SCRIPTS ================= -->
+    <script src="app.js"></script>
+    <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>
